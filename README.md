@@ -1,10 +1,10 @@
 # AxTextEllipsisControl
 
-> An AngularJS directive wrapper for the trunk8 library, for use in LaxarJS widgets 
+> Wraps the trunk8 library as an AngularJS directive, for LaxarJS widgets.
 
 This control can be used to truncate text in a more configurable way than css alone can do.
 It uses the jQuery [trunk8 plugin](https://github.com/rviscomi/trunk8). 
- 
+
 
 ## Installation
 
@@ -16,13 +16,20 @@ For general information on installing, styling and optimizing controls, have a l
 Install the control:
 
 ```sh
-bower install laxarjs.ax-text-ellipsis-control
+bower install laxar-text-ellipsis-control
 ```
 
-Reference the control from the `widget.json` of your widget:
+Make sure that `trunk8` and `jquery` can be found by RequireJS.
+For example, Assuming that your `baseUrl` is `'bower_components'`, add this to the `paths` section in your `require_config.js`.
+
+```js
+trunk8: 'trunk8/trunk8'
+```
+
+Now you may reference the control from the `widget.json` of your widget:
  
 ```json
-   "controls": [ "laxarjs.ax-text-ellipsis-control" ]
+"controls": [ "laxar-text-ellipsis-control" ]
 ```
 
 
